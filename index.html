@@ -21,7 +21,9 @@ aside{background:var(--navy);color:#fff;padding:36px 26px;position:sticky;top:0;
 .photo img{width:100%;height:100%;object-fit:cover;display:block}
 .initials{display:none;width:100%;height:100%;align-items:center;justify-content:center;font:600 3rem Poppins,sans-serif;color:var(--gold)}
 aside h1{font:600 1.35rem/1.3 Poppins,sans-serif}
-.role-line{color:#cfd6e4;font-size:.95rem;margin:6px 0 22px}
+.role-line{color:#cfd6e4;font-size:.95rem;margin:6px 0 20px}
+.cv{display:block;background:var(--gold);color:var(--navy);text-decoration:none;font:600 .95rem Poppins,sans-serif;padding:10px 14px;border-radius:4px;margin-bottom:22px}
+.cv:hover{background:#fff}
 aside nav{display:flex;flex-direction:column;text-align:left;margin-bottom:24px;border-top:1px solid #2c3d63}
 aside nav a{color:#fff;text-decoration:none;padding:9px 6px;border-bottom:1px solid #2c3d63;font-size:.95rem}
 aside nav a:hover{color:var(--gold)}
@@ -30,26 +32,27 @@ aside nav a:hover{color:var(--gold)}
 .contact a{color:#fff}
 .contact a:hover{color:var(--gold)}
 .contact b{color:var(--gold);display:block;font-weight:700;font-size:.8rem}
-main{padding:56px 56px 30px;max-width:900px}
-section{margin-bottom:54px}
+main{padding:56px 56px 30px;max-width:860px}
+section{margin-bottom:48px}
 h2{font:600 1.7rem Poppins,sans-serif;color:var(--navy);margin-bottom:6px}
-h2+.bar{width:50px;height:4px;background:var(--gold);margin-bottom:24px}
+h2+.bar{width:50px;height:4px;background:var(--gold);margin-bottom:22px}
 h3{font:600 1.08rem/1.4 Poppins,sans-serif;color:var(--navy)}
 p+p{margin-top:12px}
-.intro{font-size:1.1rem}
-.item{margin-bottom:26px}
-.meta{color:var(--grey);font-size:.93rem;margin:2px 0 8px}
+.intro{font-size:1.08rem}
+.edu{margin-top:16px;color:var(--grey);font-size:.95rem}
+.edu b{color:var(--navy)}
+.item{margin-bottom:20px}
+.meta{color:var(--grey);font-size:.93rem;margin:2px 0 4px}
 .meta b{color:var(--navy)}
-ul{padding-left:20px}
-li{margin-top:4px}
 .now{display:inline-block;background:var(--gold);color:var(--navy);font:600 .72rem Poppins,sans-serif;padding:2px 9px;border-radius:3px;margin-left:8px;vertical-align:middle}
-.proj{background:var(--light);padding:18px 20px;border-left:5px solid var(--gold);margin-bottom:18px}
-.proj p{margin-top:8px}
+.proj{background:var(--light);padding:16px 20px;border-left:5px solid var(--gold);margin-bottom:16px}
+.proj p{margin-top:6px}
+ul.ach{padding-left:20px}
 .ach li{margin-top:7px}
 .ach b{color:var(--navy)}
-.tags{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 20px}
+.more{margin-top:14px;font-size:.95rem}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
 .tags span{background:var(--navy);color:#fff;padding:3px 12px;border-radius:3px;font-size:.88rem}
-.sub{font:600 .98rem Poppins,sans-serif;color:var(--navy)}
 footer{color:var(--grey);font-size:.88rem;padding:20px 0 10px;border-top:1px solid #e5e7eb}
 @media (max-width:860px){
   .layout{grid-template-columns:1fr}
@@ -63,15 +66,14 @@ footer{color:var(--grey);font-size:.88rem;padding:20px 0 10px;border-top:1px sol
 
 <aside>
   <div class="photo">
-    <!-- Put your picture in the same folder as this file and name it profile.jpg -->
     <img src="profile.jpg.JPEG" alt="Photo of Folarin Eribake" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
     <div class="initials" aria-hidden="true">FE</div>
   </div>
   <h1>Folarin Favour Eribake</h1>
   <p class="role-line">Biomedical Engineering Student<br>University of Lagos</p>
+  <a class="cv" href="Folarin_Eribake_CV.pdf" download>Download my CV</a>
   <nav aria-label="Main">
     <a href="#about">About</a>
-    <a href="#education">Education</a>
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
     <a href="#achievements">Achievements</a>
@@ -81,7 +83,7 @@ footer{color:var(--grey);font-size:.88rem;padding:20px 0 10px;border-top:1px sol
     <p><b>Email</b><a href="mailto:eribakefolarin@gmail.com">eribakefolarin@gmail.com</a></p>
     <p><b>Phone</b><a href="tel:+2347044594700">+234 704 459 4700</a></p>
     <p><b>LinkedIn</b><a href="https://www.linkedin.com/in/folarin-eribake/" target="_blank" rel="noopener">folarin-eribake</a></p>
-    <p><b>GitHub</b><a href="https://github.com/folarineribake" target="_blank" rel="noopener">Folarin Eribake</a></p>
+    <p><b>GitHub</b><a href="https://github.com/folarineribake" target="_blank" rel="noopener">folarineribake</a></p>
     <p><b>Location</b>Lagos, Nigeria</p>
   </div>
 </aside>
@@ -89,60 +91,41 @@ footer{color:var(--grey);font-size:.88rem;padding:20px 0 10px;border-top:1px sol
 <main>
 <section id="about">
   <h2>About me</h2><div class="bar"></div>
-  <p class="intro">I’m a final-year Biomedical Engineering student at the University of Lagos. I enjoy projects where software meets hardware: deep learning models that read medical images, sensors and controllers that react in real time, and energy systems that make buildings smarter.</p>
-  <p>I co-founded JTFL ECONOVA, a team that has won innovation funding and competitions in renewable energy and sustainable materials. I also tutor fellow students in machine learning and Python.</p>
-</section>
-
-<section id="education">
-  <h2>Education</h2><div class="bar"></div>
-  <div class="item">
-    <h3>B.Sc. Biomedical Engineering</h3>
-    <div class="meta"><b>University of Lagos</b>, Lagos, Nigeria · 500 Level · Expected 2027</div>
-    <p>CGPA: 4.13 / 5.00</p>
-  </div>
+  <p class="intro">I’m a final-year Biomedical Engineering student at the University of Lagos. I enjoy projects where software meets hardware: deep learning for medical images, sensors that react in real time, and energy systems that make buildings smarter. I also co-founded JTFL ECONOVA, a team building sustainable technology.</p>
+  <p class="edu"><b>B.Sc. Biomedical Engineering</b>, University of Lagos · CGPA 4.13 / 5.00 · Expected 2027</p>
 </section>
 
 <section id="experience">
-  <h2>Work experience</h2><div class="bar"></div>
+  <h2>Experience</h2><div class="bar"></div>
 
   <div class="item">
     <h3>AI Intern <span class="now">Present</span></h3>
     <div class="meta"><b>Arewa Data Science Academy</b> · October 2026 – Present</div>
-    <ul><li>Taking part in a hands-on AI internship focused on applied data science and machine learning.</li></ul>
+    <p>Hands-on AI internship focused on applied data science and machine learning.</p>
   </div>
 
   <div class="item">
     <h3>Biomedical Engineering Intern</h3>
-    <div class="meta"><b>Reddington Multi-Specialist Hospital</b>, Lagos · 2026</div>
-    <ul>
-      <li>Assisted biomedical engineers in maintaining medical equipment across multiple departments, reducing equipment downtime by 60%.</li>
-      <li>Supported equipment performance assessments and documentation to improve reliability and ensure 100% regulatory compliance.</li>
-    </ul>
+    <div class="meta"><b>Reddington Multi-Specialist Hospital</b> · 2026</div>
+    <p>Supported maintenance of medical equipment across departments, reducing equipment downtime by 60%.</p>
   </div>
 
   <div class="item">
     <h3>Biomedical Engineering Intern</h3>
-    <div class="meta"><b>Lagos University Teaching Hospital (LUTH)</b>, Lagos · 2025</div>
-    <ul>
-      <li>Assisted in functional testing, troubleshooting and maintenance of medical equipment.</li>
-      <li>Carried out monthly software checks on medical equipment, ensuring 100% software compatibility.</li>
-    </ul>
+    <div class="meta"><b>Lagos University Teaching Hospital (LUTH)</b> · 2025</div>
+    <p>Assisted in testing, troubleshooting and maintenance of medical equipment.</p>
   </div>
 
   <div class="item">
-    <h3>Co-Founder, Team Lead &amp; Project Manager <span class="now">Present</span></h3>
-    <div class="meta"><b>JTFL ECONOVA</b>, Lagos · 2023 – Present</div>
-    <ul>
-      <li>Lead a 4-member multidisciplinary team developing sustainable technology solutions.</li>
-      <li>Secured over ₦5,000,000 in competitive innovation funding through grants and competitions, including AFRETEC and UNILAG OFF-BITE.</li>
-      <li>Directed award-winning engineering solutions in renewable energy and sustainable materials.</li>
-    </ul>
+    <h3>Co-Founder &amp; Team Lead <span class="now">Present</span></h3>
+    <div class="meta"><b>JTFL ECONOVA</b> · 2023 – Present</div>
+    <p>Lead a 4-member team building sustainable technology. Secured over ₦5,000,000 in competitive innovation funding.</p>
   </div>
 
   <div class="item">
     <h3>Machine Learning Tutor <span class="now">Present</span></h3>
     <div class="meta"><b>Biomedical Engineering Students’ Association (BMESA)</b> · 2025 – Present</div>
-    <ul><li>Tutor 20+ undergraduates in machine learning and Python through project-based sessions, tracking each cohort’s progress with a minimum of 88% per student.</li></ul>
+    <p>Tutor 20+ undergraduates in machine learning and Python.</p>
   </div>
 </section>
 
@@ -150,64 +133,43 @@ footer{color:var(--grey);font-size:.88rem;padding:20px 0 10px;border-top:1px sol
   <h2>Projects</h2><div class="bar"></div>
 
   <div class="proj">
-    <h3>Lung Nodule Classification System</h3>
-    <div class="meta">Deep learning · Medical imaging</div>
-    <p>A system that classifies lung nodules as benign or malignant from imaging data, built to support earlier and more consistent screening decisions.</p>
-  </div>
-
-  <div class="proj">
-    <h3>MRI-Detect: Brain Tumor Classification Web App</h3>
+    <h3>MRI-Detect: Brain Tumor Classification</h3>
     <div class="meta">2025 · TensorFlow, Keras, Streamlit</div>
-    <p>A MobileNetV2 model that sorts brain MRI images into 4 categories. Trained on 7,000+ labelled images with over 90% validation accuracy, including preprocessing, cleaning, augmentation and annotation.</p>
+    <p>A deep learning web app that sorts brain MRI images into 4 categories, with over 90% validation accuracy on 7,000+ images.</p>
     <p><a href="https://mridetect.streamlit.app" target="_blank" rel="noopener">Open the live app</a></p>
   </div>
 
   <div class="proj">
-    <h3>Automatic Suction–Irrigation Device (ASID) for Neurosurgery</h3>
+    <h3>Automatic Suction–Irrigation Device (ASID)</h3>
     <div class="meta">2025 · Embedded systems</div>
-    <p>A co-developed embedded fluid-management prototype with sensors and actuator control. The control logic keeps suction and irrigation balanced in simulated neurosurgical settings, with real-time response to sensor data.</p>
+    <p>An embedded prototype that balances suction and irrigation in simulated neurosurgical settings.</p>
   </div>
 
   <div class="proj">
-    <h3>SPECTRATHERM: Solar Hybrid Energy-Harvesting Smart Windows</h3>
+    <h3>SPECTRATHERM Smart Windows</h3>
     <div class="meta">2024 – Present · IoT, renewable energy</div>
-    <p>An IoT-enabled energy system with environmental sensing and monitoring. I lead the development, and the SpectraTherm Smart Window System is patented (2026).</p>
+    <p>A patented solar hybrid, energy-harvesting smart window system with environmental sensing.</p>
   </div>
 </section>
 
 <section id="achievements">
   <h2>Achievements</h2><div class="bar"></div>
   <ul class="ach">
-    <li><b>2026</b> – Millennium Fellow, Class of 2026, United Nations Academic Impact (UNAI) &amp; Millennium Campus Network (MCN)</li>
-    <li><b>2026</b> – Scholar, Nigeria Higher Education Foundation</li>
+    <li><b>2026</b> – Millennium Fellow, United Nations Academic Impact &amp; Millennium Campus Network</li>
     <li><b>2026</b> – Patent Holder, SpectraTherm Smart Window System</li>
     <li><b>2026</b> – Top Ranked Applicant, IRENA Youth Forum</li>
-    <li><b>2025</b> – Distinction Candidate, Biodesign &amp; Innovation, UNILAG</li>
     <li><b>2024</b> – Winner, AFRETEC Energy Innovation Competition</li>
     <li><b>2024</b> – Winner, UNILAG Hult Prize On-Campus Competition</li>
-    <li><b>2024</b> – First Runner-Up, UNILAG OFF-BITE 2.0 Innovation Competition</li>
-    <li><b>2023</b> – Second Runner-Up, UI–UNILAG National Design Competition</li>
   </ul>
+  <p class="more">More on my CV.</p>
 </section>
 
 <section id="skills">
-  <h2>Skills &amp; certifications</h2><div class="bar"></div>
-  <div class="sub">Programming &amp; tools</div>
-  <div class="tags"><span>Python</span><span>MATLAB</span><span>TensorFlow</span><span>Keras</span><span>Streamlit</span><span>Jupyter Notebook</span><span>Git/GitHub</span><span>Microsoft Office</span></div>
-  <div class="sub">Technical skills</div>
-  <div class="tags"><span>Machine Learning</span><span>Deep Learning</span><span>Computer Vision</span><span>Data Preprocessing</span><span>Data Cleaning</span><span>Data Augmentation</span><span>Model Training &amp; Evaluation</span><span>Embedded Systems</span><span>Sensor Integration</span><span>Technical Documentation</span></div>
-  <div class="sub">Soft skills</div>
-  <div class="tags"><span>Project Management</span><span>Team Leadership</span><span>Problem Solving</span><span>Technical Communication</span><span>Public Speaking</span><span>Grant Writing</span><span>Teaching &amp; Mentoring</span></div>
-  <div class="sub">Certifications</div>
-  <ul>
-    <li>Getting Started with Artificial Intelligence, IBM SkillsBuild</li>
-    <li>AI Literacy, IBM SkillsBuild</li>
-    <li>Python Programming, Kibo School of Technology (accredited by Woolf University, Germany)</li>
-    <li>HSE Level 1 &amp; 2 Certification, Deeprimex Consulting</li>
-  </ul>
+  <h2>Skills</h2><div class="bar"></div>
+  <div class="tags"><span>Python</span><span>MATLAB</span><span>TensorFlow</span><span>Keras</span><span>Streamlit</span><span>Git/GitHub</span><span>Machine Learning</span><span>Deep Learning</span><span>Computer Vision</span><span>Embedded Systems</span><span>Project Management</span><span>Team Leadership</span></div>
 </section>
 
-<footer>© 2026 Folarin Favour Eribake. All rights reserved.</footer>
+<footer>© 2026 Folarin Favour Eribake</footer>
 </main>
 </div>
 </body>
